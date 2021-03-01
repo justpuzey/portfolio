@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header and Nav*/
+header {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 35px;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 36;
+  color: cornflowerblue;
+}
+header nav {
+  padding: 10px 0 0 0;
+}
+header nav a {
+  text-decoration: none;
+  color: cornflowerblue;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul li a {
+  padding: 10px 15px;
+  text-decoration: underline solid 3px cornflowerblue;
+}
+/* Hero and Subtitle*/
+.hero {
+  background-image: url("../images/computer-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+#subtitle {
+  background-color: cornflowerblue;
+  color: black;
+  width: 35%;
+  text-align: center;
+  justify-content: end;
+  height: auto;
+  margin: 0 25px 25px 0;
+  padding: 10px;
+}
+
+/* Parent Flexbox for About Me Section */
+.content-row {
+  display: flex;
+  justify-content: center;
+  margin: 15px 15px;
+}
+
+.left-title {
+  width: 20%;
+  justify-content: flex-start;
+  text-align: right;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0 15px;
+  border-right: 4px solid midnightblue;
+  color: midnightblue;
+  padding-right: 15px;
+}
+
+.work-container {
+  width: 80%;
+  display: flex;
+  align-items: flex-end; /*moves label box to bottom of container*/
+}
+
+/* About Me */
+.about-container {
+  width: 80%;
+}
+
+#about-me p {
+  margin: 0 0 10px 0;
+  color: midnightblue;
+}
+
+.primary-project {
+  background-image: url("../images/2021-02-28.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  display: flex;
+  align-content: center;
+  border: solid 4px cornflowerblue;
+}
+
+.project-title {
+  background-color: cornflowerblue;
+  color: black;
+  width: 20%;
+  text-align: left;
+  height: 50px;
+  padding: 10px;
+  margin: 0 0 25px 0;
+}
+.project-title a {
+  text-decoration: none;
+}
+
+/* Footer */
+#contact-box {
+  display: flex;
+  justify-content: space-around;
+}

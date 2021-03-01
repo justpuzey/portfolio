@@ -9,6 +9,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+  --main-accent: skyblue;
+  --general-text: midnightblue;
+}
 /* Header and Nav*/
 header {
   background-color: black;
@@ -21,14 +25,14 @@ header {
 header h1 {
   font-weight: bold;
   font-size: 36;
-  color: cornflowerblue;
+  color: var(--main-accent);
 }
 header nav {
   padding: 10px 0 0 0;
 }
 header nav a {
   text-decoration: none;
-  color: cornflowerblue;
+  color: var(--main-accent);
 }
 
 header nav ul {
@@ -41,7 +45,7 @@ header nav ul {
 
 header nav ul li a {
   padding: 10px 15px;
-  text-decoration: underline solid 3px cornflowerblue;
+  text-decoration: underline solid 3px var(--main-accent);
 }
 /* Hero and Subtitle*/
 .hero {
@@ -56,7 +60,7 @@ header nav ul li a {
 }
 
 #subtitle {
-  background-color: cornflowerblue;
+  background-color: var(--main-accent);
   color: black;
   width: 35%;
   text-align: center;
@@ -80,15 +84,9 @@ header nav ul li a {
   font-weight: bold;
   font-size: 30px;
   margin: 0 15px;
-  border-right: 4px solid midnightblue;
-  color: midnightblue;
+  border-right: 4px solid var(--general-text);
+  color: var(--general-text);
   padding-right: 15px;
-}
-
-.work-container {
-  width: 80%;
-  display: flex;
-  align-items: flex-end; /*moves label box to bottom of container*/
 }
 
 /* About Me */
@@ -98,7 +96,7 @@ header nav ul li a {
 
 #about-me p {
   margin: 0 0 10px 0;
-  color: midnightblue;
+  color: var(--general-text);
 }
 
 .primary-project {
@@ -106,15 +104,25 @@ header nav ul li a {
   background-repeat: no-repeat;
   background-size: cover;
   height: 350px;
+  width: 80%;
   display: flex;
-  align-content: center;
-  border: solid 4px cornflowerblue;
+  align-items: flex-end; /*moves label box to bottom of container*/
+  border: solid 4px var(--main-accent);
+}
+
+.work-container {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end; /*moves label box to bottom of container*/
 }
 
 .project-title {
-  background-color: cornflowerblue;
-  color: black;
-  width: 20%;
+  background-color: var(--main-accent);
+  color: var(--general-text);
+  font-size: small;
+  width: 150px;
   text-align: left;
   height: 50px;
   padding: 10px;
@@ -122,10 +130,24 @@ header nav ul li a {
 }
 .project-title a {
   text-decoration: none;
+  color: var(--general-text);
+  font-weight: bold;
+  font-size: medium;
 }
-
 /* Footer */
 #contact-box {
   display: flex;
   justify-content: space-around;
+  width: 80%;
+  color: var(--main-accent);
+  height: 20px;
+}
+
+#contact-box a {
+  color: var(--main-accent);
+  text-decoration: none;
+}
+
+.element-underline {
+  border-bottom: solid 3px var(--main-accent);
 }

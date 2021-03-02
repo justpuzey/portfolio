@@ -99,23 +99,35 @@ header nav ul li a {
   color: var(--general-text);
 }
 
-.primary-project {
-  background-image: url("../images/2021-02-28.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 350px;
-  width: 80%;
-  display: flex;
-  align-items: flex-end; /*moves label box to bottom of container*/
-  border: solid 4px var(--main-accent);
-}
-
 .work-container {
   width: 80%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-end; /*moves label box to bottom of container*/
+}
+
+.primary-project {
+  background-image: url("../images/2021-02-28.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end; /*moves label box to bottom of container*/
+  border: solid 4px var(--main-accent);
+}
+
+.secondary-project {
+  background-image: url("../images/2021-02-28.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 15px;
+  height: 200px;
+  width: 49%;
+  display: flex;
+  align-items: flex-end; /*moves label box to bottom of container*/
+  border: solid 4px var(--main-accent);
 }
 
 .project-title {

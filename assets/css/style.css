@@ -13,13 +13,16 @@ body {
   --main-accent: skyblue;
   --general-text: midnightblue;
 }
+.element-underline {
+  border-bottom: solid 3px var(--main-accent);
+}
 /* Header and Nav*/
 header {
   background-color: black;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 20px 35px;
+  padding: 15px 35px;
 }
 
 header h1 {
@@ -70,7 +73,7 @@ header nav ul li a {
   padding: 10px;
 }
 
-/* Parent Flexbox for About Me Section */
+/* Parent Flexbox */
 .content-row {
   display: flex;
   justify-content: center;
@@ -106,19 +109,35 @@ header nav ul li a {
   justify-content: space-between;
   align-items: flex-end; /*moves label box to bottom of container*/
 }
-
-.primary-project {
-  background-image: url("../images/2021-02-28.png");
+.primary-project:hover,
+.secondary-project:hover{
+  opacity: .9;
+}
+.primary-project,
+.secondary-project{
   background-repeat: no-repeat;
   background-size: cover;
-  height: 350px;
-  width: 100%;
+  opacity: .7;
   display: flex;
-  align-items: flex-end; /*moves label box to bottom of container*/
+  align-items: flex-end;
   border: solid 4px var(--main-accent);
 }
+.primary-project {
+  background-image: url("../images/horiseon-screenshot.png");
+
+  height: 350px;
+  width: 100%;
+
+}
+.secondary-project {
+
+  margin-top: 15px;
+  height: 200px;
+  width: 49%;
+
+}
 .proj1 {
-  background-image: url("../images/proj1.jpg");
+  background-image: url("../images/2021-02-28.png");
 }
 .proj2 {
   background-image: url("../images/proj2.jpg");
@@ -129,17 +148,6 @@ header nav ul li a {
 .proj4 {
   background-image: url("../images/proj4.jpg");
 }
-.secondary-project {
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: 15px;
-  height: 200px;
-  width: 49%;
-  display: flex;
-  align-items: flex-end; /*moves label box to bottom of container*/
-  border: solid 4px var(--main-accent);
-}
-
 .project-title {
   background-color: var(--main-accent);
   color: var(--general-text);
@@ -169,8 +177,4 @@ header nav ul li a {
 #contact-box a {
   color: var(--main-accent);
   text-decoration: none;
-}
-
-.element-underline {
-  border-bottom: solid 3px var(--main-accent);
 }

@@ -123,7 +123,7 @@ header nav ul li a {
   border: solid 4px var(--main-accent);
 }
 .primary-project {
-  background-image: url("../images/proj1-home.png");
+  background-image: url("../images/water-ways.PNG");
 
   height: 350px;
   width: 100%;
@@ -137,10 +137,10 @@ header nav ul li a {
 
 }
 .proj1 {
-  background-image: url("../images/2021-02-28.png");
+  background-image: url("../images/proj1-home.png");
 }
 .proj2 {
-  background-image: url("../images/proj2.jpg");
+  background-image: url("../images/2021-02-28.png");
 }
 .proj3 {
   background-image: url("../images/proj3.jpg");
@@ -152,7 +152,7 @@ header nav ul li a {
   background-color: var(--main-accent);
   color: var(--general-text);
   font-size: small;
-  width: 150px;
+  width: 180px;
   text-align: left;
   height: 50px;
   padding: 10px;
